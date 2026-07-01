@@ -51,6 +51,7 @@ data class BackupAnime(
     @ProtoNumber(804) var customDescription: String? = null,
     @ProtoNumber(805) var customGenre: List<String>? = null,
     // Aniyomi specific values
+    // @ProtoNumber(501) Broken, do not use
     @ProtoNumber(502) var parentId: Long? = null,
     @ProtoNumber(503) var id: Long? = null, // Used to associate seasons with parents. Do not use for anything else.
     @ProtoNumber(504) var seasonFlags: Long = 0,

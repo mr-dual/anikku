@@ -40,6 +40,7 @@ class AnimeRestorer(
     private val setCustomAnimeInfo: SetCustomAnimeInfo = Injekt.get(),
     // SY <--
 ) {
+
     private var now = ZonedDateTime.now()
     private var currentFetchWindow = fetchInterval.getWindow(now)
 
